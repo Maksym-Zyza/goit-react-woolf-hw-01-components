@@ -24,3 +24,8 @@ code {
   font-size: 40;
   color: #010101;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

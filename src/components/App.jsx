@@ -5,17 +5,6 @@ import user from '../Data/user.json';
 import data from '../Data/data.json';
 
 export const App = () => {
-  const NewComponent = React.createElement(
-    'div',
-    {
-      id: '123',
-      className: 'sdfsdf',
-      dasdsa: 'Lorefasfsjdflsjfljs',
-    },
-    'DDDDD'
-  );
-  console.log(NewComponent);
-
   return (
     <div className="container">
       <Profile
