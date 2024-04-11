@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Statistics.module.scss';
 
-const Statistics = ({ title = '', stats }) => {
+export const Statistics = ({ title = '', stats }) => {
   return (
     <section className={style.statistics}>
       {title && <h3>Upload stats</h3>}
@@ -17,5 +17,3 @@ const Statistics = ({ title = '', stats }) => {
     </section>
   );
 };
-
-export default Statistics;

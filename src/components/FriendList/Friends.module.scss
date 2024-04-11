@@ -9,7 +9,6 @@
   min-width: 500px;
   border: 1px solid turquoise;
   border-radius: 8px;
-  $background-colors: aqua, lightcoral, floralwhite, gold, turquoise;
   li {
     @extend .displayFlex;
     flex-direction: column;

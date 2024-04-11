@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Profile.module.scss';
 
-const Profile = () => {
+export const Profile = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.description}>
@@ -31,5 +31,3 @@ const Profile = () => {
     </div>
   );
 };
-
-export default Profile;
