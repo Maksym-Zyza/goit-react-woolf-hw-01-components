@@ -1,0 +1,38 @@
+@import '../../index.scss';
+
+.friendList {
+  @extend .displayFlex;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 20px;
+  min-width: 500px;
+  border: 1px solid turquoise;
+  border-radius: 8px;
+  $background-colors: aqua, lightcoral, floralwhite, gold, turquoise;
+  li {
+    @extend .displayFlex;
+    flex-direction: column;
+    padding: 8px;
+    width: 20%;
+  }
+  .item {
+    .name {
+      color: grey;
+    }
+    .status {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: green;
+    }
+    .online {
+      @extend .status;
+      background-color: green;
+    }
+    .offline {
+      @extend .status;
+      background-color: red;
+    }
+  }
+}
