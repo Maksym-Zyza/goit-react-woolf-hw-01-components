@@ -1,15 +1,10 @@
+@import '../../index.scss';
+
 .wrapper {
   padding: 20px;
   margin-bottom: 40px;
   border: 1px solid green;
   border-radius: 8px;
-
-  .displayFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .description {
     @extend .displayFlex;
     flex-direction: column;

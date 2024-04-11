@@ -1,5 +1,38 @@
+@import '../../index.scss';
+
 .statistics {
+  margin-bottom: 40px;
+  padding: 20px;
+  min-width: 340px;
   border: 1px solid turquoise;
   border-radius: 8px;
-  padding: 20px;
+  h3 {
+    text-align: center;
+  }
+  .statList {
+    margin: 0;
+    @extend .displayFlex;
+    justify-content: space-around;
+    $background-colors: aqua, lightcoral, floralwhite, gold, turquoise;
+    @for $i from 1 through 5 {
+      li:nth-child(#{$i}) {
+        background-color: nth($background-colors, $i);
+      }
+    }
+    .item {
+      @extend .displayFlex;
+      flex-direction: column;
+      padding: 8px;
+      width: 20%;
+      .label {
+        margin-top: 12px;
+        margin-bottom: 4px;
+        color: grey;
+        font-size: 12px;
+      }
+      .percentage {
+        font-weight: 500;
+      }
+    }
+  }
 }

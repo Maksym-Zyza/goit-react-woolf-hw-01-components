@@ -4,13 +4,13 @@ import style from './Statistics.module.scss';
 const Statistics = ({ title = '', stats }) => {
   return (
     <section className={style.statistics}>
-      {title && <h2 className="title">Upload stats</h2>}
+      {title && <h3>Upload stats</h3>}
 
-      <ul className="stat-list">
+      <ul className={style.statList}>
         {stats.map(el => (
-          <li className="item" key={el.id}>
-            <span className="label">{el.label}</span>
-            <span className="percentage">{el.percentage}</span>
+          <li className={style.item} key={el.id}>
+            <span className={style.label}>{el.label}</span>
+            <span className={style.percentage}>{el.percentage}%</span>
           </li>
         ))}
       </ul>
