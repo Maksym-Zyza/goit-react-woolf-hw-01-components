@@ -1,0 +1,11 @@
+.wrapper {
+  border: 1px solid green;
+  border-radius: 8px;
+
+  .description {
+    padding: 20px;
+    img {
+      width: 200px;
+    }
+  }
+}
